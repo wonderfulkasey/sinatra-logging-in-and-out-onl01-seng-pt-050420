@@ -29,7 +29,8 @@ if User.find_by(id: session[:user_id])
   end
 
   get '/logout' do
-
+session.clear
+    redirect to '/'
   end
 
 
